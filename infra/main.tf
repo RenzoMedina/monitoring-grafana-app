@@ -73,7 +73,7 @@ resource "azurerm_network_security_group" "ssh-nsg" {
     destination_address_prefix = "*"
   }
   security_rule {
-    name                       = "Allow-HTTP"
+    name                       = "Allow-HTTP-1"
     priority                   = 1003
     direction                  = "Inbound"
     access                     = "Allow"
@@ -83,8 +83,8 @@ resource "azurerm_network_security_group" "ssh-nsg" {
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
-    security_rule {
-    name                       = "Allow-HTTP"
+  security_rule {
+    name                       = "Allow-HTTP-2"
     priority                   = 1004
     direction                  = "Inbound"
     access                     = "Allow"
@@ -95,7 +95,7 @@ resource "azurerm_network_security_group" "ssh-nsg" {
     destination_address_prefix = "*"
   }
   security_rule {
-    name                       = "Allow-HTTP"
+    name                       = "Allow-HTTP-3"
     priority                   = 1005
     direction                  = "Inbound"
     access                     = "Allow"
@@ -106,7 +106,7 @@ resource "azurerm_network_security_group" "ssh-nsg" {
     destination_address_prefix = "*"
   }
   security_rule {
-    name                       = "Allow-HTTP"
+    name                       = "Allow-HTTP-4"
     priority                   = 1006
     direction                  = "Inbound"
     access                     = "Allow"
@@ -117,7 +117,7 @@ resource "azurerm_network_security_group" "ssh-nsg" {
     destination_address_prefix = "*"
   }
   security_rule {
-    name                       = "Allow-HTTP"
+    name                       = "Allow-HTTP-5"
     priority                   = 1007
     direction                  = "Inbound"
     access                     = "Allow"
