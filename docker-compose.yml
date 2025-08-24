@@ -7,7 +7,7 @@ services:
       - ./nginx/landing/dist:/usr/share/nginx/html
       - ./nginx/logs:/var/log/nginx
     ports:
-      - "8080:80"
+      - "80:80"
 
   filebeat:
     image: docker.elastic.co/beats/filebeat:8.12.0
